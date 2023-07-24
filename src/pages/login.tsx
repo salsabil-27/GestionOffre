@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import ForgetPassword from "./forgetpassword.tsx";
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
 
@@ -30,7 +30,7 @@ const Login = () => {
             placeholder="Password"
           ></input>
           <div className="flex justify-end w-full">
-            <p className="text-black underline mb-5 text-sm font-medium cursor-pointer">
+            <p className="text-black underline mb-5 text-sm font-medium cursor-pointer" >
               Forget Password?
             </p>
           </div>
