@@ -18,7 +18,11 @@ const DemandeOffre = () => {
   const [startDate, setStartDate] = useState(null); // Etat pour la date d'entrée
   const [deadline, setDeadline] = useState(null); // Etat pour la deadline
  
-
+  const [NomClient, setNomClient] = useState("");
+  const [ContactClient, setContactClient] = useState("");
+  const [Référence, setRéférence] = useState("");
+  const [RespProjet, setRespProjet] = useState("");
+ 
   const [robotique, setRobotique] = useState(false);
   const [vente, setVente] = useState(false);
   const [electrique, setElectrique] = useState(false);
@@ -210,8 +214,8 @@ const DemandeOffre = () => {
           <input
             className="px-2 m-2 py-1 w-4/5 md:w-full border-[1px] border-gray-300 focus:shadow-md focus:border-gray-400 focus:outline-none focus:ring-0"
             type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            value={RespProjet}
+            onChange={(e) => setRespProjet(e.target.value)}
           />
         </label>
         <br />
@@ -220,8 +224,8 @@ const DemandeOffre = () => {
           <input
             className="px-2 m-2 py-1 w-4/5 md:w-full border-[1px] border-gray-300 focus:shadow-md focus:border-gray-400 focus:outline-none focus:ring-0"
             type="tel"
-            value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
+            value={NomClient}
+            onChange={(e) => setNomClient(e.target.value)}
           />
         </label>
         <br />
@@ -230,8 +234,8 @@ const DemandeOffre = () => {
           <input
             className="px-2 m-2 py-1 w-4/5 md:w-full border-[1px] border-gray-300 focus:shadow-md focus:border-gray-400 focus:outline-none focus:ring-0"
             type="text"
-            value={autre}
-            onChange={(e) => setautre(e.target.value)}
+            value={ContactClient}
+            onChange={(e) => setContactClient(e.target.value)}
           />
         </label>
         <br />
@@ -240,8 +244,8 @@ const DemandeOffre = () => {
           <input
             className="px-2 m-2 py-1 w-4/5 md:w-full border-[1px] border-gray-300 focus:shadow-md focus:border-gray-400 focus:outline-none focus:ring-0"
             type="text"
-            value={autre}
-            onChange={(e) => setautre(e.target.value)}
+            value={ Référence}
+            onChange={(e) => setRéférence(e.target.value)}
           />
         </label>
       </form>
